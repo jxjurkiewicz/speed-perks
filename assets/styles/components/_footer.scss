@@ -1,0 +1,160 @@
+footer {
+    width: 100%;
+    background: #141414;
+    margin-top: 100px;
+    .wrapper {
+        .footer__manufacturer {
+            display: flex;
+            padding-top: 73px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #616161;
+            flex-wrap: wrap;
+            &__logo {
+                max-width: 288px;
+                font-size: 14px;
+                img {
+                    max-width: 90%;
+                }
+                p {
+                    line-height: 20px;
+                }
+                &__socials {
+                    display: flex;
+                    margin-top: 32px;
+                    a {
+                        margin-left: 16px;
+                    }
+                }
+            }
+            &__menu {
+                display: flex;
+                justify-content: center;
+                flex-grow: 1;
+                flex-wrap: wrap;
+                &__list {
+                    width: 20%;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+                        li {
+                            font-size: 12px;
+                            line-height: 20px;
+                            a {
+                                text-decoration: none;
+                                color: #616161;
+                                a:link,
+                                :visited {
+                                    color: #616161;
+                                }
+                            }
+                            a:hover {
+                                color: #fff;
+                            }
+                        }
+                        li:first-child {
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__brands {
+            display: flex;
+            margin: 42px 0 42px 0;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &__logo {
+                img {
+                    height: 30px;
+                    max-width: 100%;
+                    display: flex;
+                }
+            }
+        }
+    }
+    .copyrights {
+        width: 100%;
+        min-height: 71px;
+        background: #800000;
+        color: #fff;
+        font-size: 12px;
+        .wrapper {
+            .copyrights__wrapper {
+                display: flex;
+                padding-top: 28px;
+                flex-wrap: wrap;
+                &__terms {
+                    display: flex;
+                    margin-left: auto;
+                    &__content {
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            color: #fff;
+                            :link,
+                            :visited {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    footer {
+        .wrapper {
+            .footer__manufacturer {
+                padding-top: 40px;
+                &__logo {
+                    max-width: 70%;
+                    margin-bottom: 72px;
+                }
+                &__menu {
+                    &__list {
+                        width: 50%;
+                    }
+                }
+                &__menu div:nth-of-type(3),
+                div:nth-of-type(4) {
+                    margin-top: 40px;
+                }
+            }
+            .footer__brands {
+                &__logo {
+                    width: calc(100% / 3);
+                    img {
+                        height: 18px;
+                    }
+                }
+            }
+            .footer__brands div:nth-of-type(4),
+            div:nth-of-type(5),
+            div:nth-of-type(6) {
+                margin-top: 28px;
+            }
+        }
+        .copyrights {
+            min-height: 102px;
+            .wrapper {
+                .copyrights__wrapper {
+                    &__copyright {
+                        width: 100%;
+                        order: 2;
+                        margin: 24px 0 0 0;
+                    }
+                    &__terms {
+                        order: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
