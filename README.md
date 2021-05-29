@@ -1,4 +1,4 @@
-# PROJEKT NIEKOMERCYJNY
+# Projekt pokazowy
 
 VSCode extenstions:
 Live Sass Compiler
